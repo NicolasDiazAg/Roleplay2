@@ -1,20 +1,10 @@
 namespace Ucu.Poo.RoleplayGame;
 
-public class Spell
+public class Spell : Item
 {
-    public int AttackValue
+    public Spell(string name, int attackValue, int defenseValue) : base(name, attackValue, defenseValue)
     {
-        get
-        {
-            return 70;
-        }
-    }
-
-    public int DefenseValue
-    {
-        get
-        {
-            return 70;
-        }
+        this.DefenseValue = defenseValue;
+        this.AttackValue = attackValue;
     }
 }
