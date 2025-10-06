@@ -13,6 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{4AD47FAA-D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTests", "test\LibraryTests\LibraryTests.csproj", "{2AB1575E-8FDC-4057-8B29-1E5C3F58F896}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagrama", "Diagrama", "{C6B19E60-B51F-4D0B-8FB0-618A3A6274F9}"
+	ProjectSection(SolutionItems) = preProject
+		src\Roleplay p2 - Elixir.drawio.svg = src\Roleplay p2 - Elixir.drawio.svg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,5 +44,6 @@ Global
 		{BE9478C5-80DF-4772-B622-717F5E391005} = {8F7FA281-D6EF-45CA-89BF-FB6EB45CBD03}
 		{4739E719-77CD-43EF-B204-79661C30ABE0} = {8F7FA281-D6EF-45CA-89BF-FB6EB45CBD03}
 		{2AB1575E-8FDC-4057-8B29-1E5C3F58F896} = {4AD47FAA-D175-4ED7-A882-FA0BF7189E5A}
+		{C6B19E60-B51F-4D0B-8FB0-618A3A6274F9} = {8F7FA281-D6EF-45CA-89BF-FB6EB45CBD03}
 	EndGlobalSection
 EndGlobal
