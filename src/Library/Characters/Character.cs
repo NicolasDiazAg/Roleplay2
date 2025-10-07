@@ -13,9 +13,10 @@ public class Character
         this.Health = health;
         this.Attack = attack;
         this.Defense = defense;
+        this.items = new List<Item>();
     }
 
-    public int AttackValue()
+    public virtual int AttackValue()
     {
         foreach (var VARIABLE in this.items)
         {
@@ -24,12 +25,37 @@ public class Character
 
         return Attack;
     }
+
+    public virtual int DefenseValue()
+    {
+        foreach (var VARIABLE in this.items)
+        {
+            Defense += VARIABLE.DefenseValue;
+        }
+        
+        return Defense;
+    }
     public void ReciveAttack(int damage)
     {
-        if (this.Defense < damage)
+        int finaldamage = damage - DefenseValue(); 
+        if (finaldamage > 0)
         {
-            this.Health -= damage - this.Defense;
+            this.Health -= finaldamage;
+            if (this.Health < 0)
+            {
+                this.Health = 0;
+            }
         }
+    }
+
+    public void AddItem(Item item)
+    {
+        this.items.Add(item);
+    }
+
+    public void RemoveItem(Item item)
+    {
+        this.items.Remove(item);
     }
     
     public void Cure()
@@ -39,6 +65,9 @@ public class Character
     
     public void ShowCharacter()
     {
-        Console.WriteLine($"Character:{this.Name}\\n -health:{this.Health} \\n -defense:{this.Defense} \\n -attack:{this.Attack}");
+        Console.WriteLine(
+            $"Character:{this.Name}\n -health:{this.Health} \n -defense:{this.Defense} \n -attack:{this.Attack}");
     }
+    
+    
 }
