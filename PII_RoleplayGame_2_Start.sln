@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTests", "test\Librar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagrama", "Diagrama", "{C6B19E60-B51F-4D0B-8FB0-618A3A6274F9}"
 	ProjectSection(SolutionItems) = preProject
-		src\Roleplay p2 - Elixir.drawio.svg = src\Roleplay p2 - Elixir.drawio.svg
+		src\Roleplay p2 - Elixir.drawio.png = src\Roleplay p2 - Elixir.drawio.png
 	EndProjectSection
 EndProject
 Global
